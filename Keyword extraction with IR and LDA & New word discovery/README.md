@@ -4,7 +4,7 @@
 ```
 pip install -r requirements.txt
 # Unittests in test_tfidf.py, e.g.:
-python /Applications/PyCharm.app/Contents/plugins/python/helpers/pycharm/_jb_unittest_runner.py --path .../tests/test_textrank.py 
+python /Applications/PyCharm.app/Contents/plugins/python/helpers/pycharm/_jb_unittest_runner.py --path .../tests/test_tfidf.py 
 ```  
 This program first calculates the offline idf for each word in all the files in ```tests/test_data/seg_data``` (tokenized text, with each line representing a document), and then keeps it fixed. It then calculates the tf for the words in ```words``` and finally computes and prints the tf-idf for each word.
 
