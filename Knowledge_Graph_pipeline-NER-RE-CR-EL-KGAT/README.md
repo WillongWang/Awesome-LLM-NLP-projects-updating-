@@ -116,7 +116,7 @@ The model outputs 19 logits corresponding to the 19 relation classes, and comput
 
 Coreference Resolution can be modeled similarly as a relation extraction task.  
 Model architecture depicted in [Matching the Blanks: Distributional Similarity for Relation Learning](https://aclanthology.org/P19-1279.pdf):
-![ggg.png](https://github.com/WillongWang/Knowledge_Graph_pipeline-NER-RE-CR-EL-KGAT/blob/main/ggg.png)  
+![ggg.png](https://github.com/WillongWang/Awesome-LLM-NLP-projects-updating-/blob/main/Knowledge_Graph_pipeline-NER-RE-CR-EL-KGAT/ggg.png)  
 The code implementation via `--span_identification_method`:
 - `v1`: No modification
 - `v2`: Add entity markers  
