@@ -43,7 +43,7 @@ The same process applies for v2 and v3.
 ./src/CRF/scripts/train_kgclue.sh
 ```
 `pad_token_label_id=0`, and by default, it uses v3.  
-The loss is computed as follows, adding the negative log-likelihood of a sequence of tags (x_i -> y_i) given some emission scores from the Linear-chain CRF:  
+The loss is computed as follows, adding the negative log-likelihood of a sequence of tags ($$x_i -> y_i$$) given some emission scores from the Linear-chain CRF:  
 ![](https://github.com/WillongWang/Knowledge_Graph_pipeline-NER-RE-CR-EL-KGAT/blob/main/g.png)  
 
 $$
