@@ -58,7 +58,7 @@ class TopicModel(object):
                 continue
             new_words.append(word)
             word_topics_distribute = [0] * self.lda_model.num_topics  # 全零初始化主题向量
-            for topic_idx, prob in self.lda_model.get_term_topics(  # 迭代词的主题分布
+            for topic_idx, prob in self.lda_model.get_term_topics(  # 迭代词的主题分布,是大写phi不是变分推出的小写phi?
                     self.lda_dict.token2id[word], minimum_probability=0
             ):
                 word_topics_distribute[topic_idx] = prob  # 更新到word_topics_distribute
