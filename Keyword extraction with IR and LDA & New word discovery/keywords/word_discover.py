@@ -150,7 +150,7 @@ class WordDiscover(object):
 
         # 计算
         for target_ngram in target_ngrams:
-            try:  # 一定情况下, 一个candidate ngram 没有左右neighbor
+            try:  # 一定情况下, 一个candidate ngram 没有左右neighbor,values是trie官网函数
                 right_neighbor_counts = (right_neighbors.values(target_ngram))
                 right_entropy = WordDiscover._ngram_entropy_score(right_neighbor_counts)
 
