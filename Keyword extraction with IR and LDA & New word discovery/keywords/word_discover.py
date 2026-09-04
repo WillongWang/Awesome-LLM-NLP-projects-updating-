@@ -109,11 +109,11 @@ class WordDiscover(object):
         根据邻字neighbor的出现频率，按照公式，计算一个词左熵或右熵
 
         Args:
-            parent_ngrams_freq: 该的的父级词的频率统计 [5,6,7..]
+            parent_ngrams_freq: 该的父级词的频率统计 [5,6,7..]
         """
-        total_freq = sum(parent_ngrams_freq)  # 总词频数，即当前gram的词频
+        total_freq = sum(parent_ngrams_freq)  # 总词频数
         parent_ngram_probas = [
-            freq / total_freq for freq in parent_ngrams_freq  # P(W_neighbor|W) = Count(W,W_neighbor) / Count(W)
+            freq / total_freq for freq in parent_ngrams_freq  # P(neighbor)
         ]
         entropy = sum([-1 * prob * math.log(prob, 2) for prob in parent_ngram_probas])
         return entropy
